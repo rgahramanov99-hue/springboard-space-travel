@@ -1,0 +1,54 @@
+.motto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 30px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.95),
+      rgba(30, 41, 59, 0.95),
+      rgba(15, 23, 42, 0.95)
+    );
+
+  border-top: 1px solid rgba(56, 189, 248, 0.35);
+
+  box-shadow:
+    0 -5px 20px rgba(56, 189, 248, 0.15);
+
+  border-radius: 16px 16px 0 0;
+}
+
+.motto__text {
+  color: #e2e8f0;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-shadow:
+    0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.motto__emojis {
+  font-size: 1.8rem;
+
+  animation: floatEmojis 3s ease-in-out infinite;
+}
+
+@keyframes floatEmojis {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

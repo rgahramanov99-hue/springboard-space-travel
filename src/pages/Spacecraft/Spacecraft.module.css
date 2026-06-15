@@ -1,0 +1,111 @@
+.spacecraft {
+  max-width: 1000px;
+
+  margin: 50px auto;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  padding: 35px;
+
+  background: rgba(15, 23, 42, 0.92);
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(56, 189, 248, 0.3);
+
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.2),
+    0 0 60px rgba(59, 130, 246, 0.08);
+}
+
+.spacecraft__imageContainer {
+  width: 350px;
+  height: 350px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  border: 3px solid #38bdf8;
+
+  box-shadow:
+    0 0 25px rgba(56, 189, 248, 0.4);
+
+  flex-shrink: 0;
+}
+
+.spacecraft__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.spacecraft__image--default {
+  font-size: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.spacecraft__info {
+  flex: 1;
+}
+
+.spacecraft__info h1 {
+  margin: 0 0 20px;
+
+  font-size: 3rem;
+
+  color: #38bdf8;
+
+  text-shadow:
+    0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+.spacecraft__info p {
+  font-size: 1.2rem;
+
+  line-height: 1.8;
+
+  color: #d1d5db;
+
+  margin-bottom: 16px;
+}
+
+.button__back {
+  margin: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #38bdf8
+  );
+
+  border: none;
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: all 0.3s ease;
+}
+
+.button__back:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 18px rgba(56, 189, 248, 0.6);
+}

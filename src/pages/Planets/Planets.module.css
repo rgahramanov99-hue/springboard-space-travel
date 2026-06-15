@@ -1,0 +1,195 @@
+.planetWithSpacecrafts {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+
+  margin-bottom: 30px;
+  padding: 24px;
+
+  background: rgba(15, 23, 42, 0.88);
+
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 24px;
+
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 0.18),
+    0 0 45px rgba(59, 130, 246, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.planetWithSpacecrafts:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 30px rgba(59, 130, 246, 0.35),
+    0 0 70px rgba(59, 130, 246, 0.15);
+}
+
+.planet {
+  min-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 24px;
+
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 65%),
+    rgba(2, 6, 23, 0.9);
+
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.planet:hover {
+  transform: scale(1.04);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 0 20px rgba(56, 189, 248, 0.45);
+}
+
+.planet--selected {
+  border-color: #22c55e;
+
+  box-shadow:
+    0 0 20px rgba(34, 197, 94, 0.7),
+    0 0 45px rgba(34, 197, 94, 0.25);
+}
+
+.planet__imageContainer {
+  width: 140px;
+  height: 140px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet__image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  box-shadow:
+    inset 0 0 15px rgba(255, 255, 255, 0.25),
+    0 0 25px rgba(56, 189, 248, 0.45);
+}
+
+.planet__info {
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: #e5e7eb;
+}
+
+.planet__info div:first-child {
+  font-size: 1.4rem;
+
+  margin-bottom: 8px;
+
+  color: #38bdf8;
+
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
+}
+
+.planet__spacecrafts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  flex: 1;
+
+  padding: 10px;
+}
+
+.planet__spacecraft {
+  width: 130px;
+
+  padding: 16px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+
+  text-align: center;
+
+  cursor: grab;
+
+  transition: all 0.3s ease;
+}
+
+.planet__spacecraft:hover {
+  transform: translateY(-5px);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 0 18px rgba(56, 189, 248, 0.45);
+}
+
+.planet__spacecraft--selected {
+  border-color: #f97316;
+
+  box-shadow:
+    0 0 18px rgba(249, 115, 22, 0.7);
+}
+
+.planet__spacecraft__imageContainer {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  border: 2px solid rgba(56, 189, 248, 0.6);
+
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.planet__spacecraft__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.planet__spacecraft__image--default {
+  font-size: 2.6rem;
+}
+
+.planet__spacecraft__info {
+  font-size: 0.95rem;
+
+  color: #e5e7eb;
+}
+
+.planet__spacecraft__info div:first-child {
+  font-weight: bold;
+
+  color: white;
+
+  margin-bottom: 6px;
+}

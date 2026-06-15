@@ -1,0 +1,147 @@
+.build {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 35px;
+
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 35%),
+    rgba(15, 23, 42, 0.92);
+
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 28px;
+
+  box-shadow:
+    0 0 25px rgba(56, 189, 248, 0.18),
+    0 0 70px rgba(56, 189, 248, 0.08);
+}
+
+.build__title {
+  text-align: center;
+  font-size: 42px;
+  margin: 0 0 12px;
+
+  color: #e0f2fe;
+
+  text-shadow:
+    0 0 16px rgba(56, 189, 248, 0.7);
+}
+
+.build__subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.form__inputs {
+  padding: 28px;
+
+  background: rgba(2, 6, 23, 0.75);
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 22px;
+
+  margin: 25px 0;
+}
+
+.form__inputContainer:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.form__inputContainer input,
+.form__inputContainer textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 16px 18px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: white;
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 14px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.form__inputContainer input::placeholder,
+.form__inputContainer textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form__inputContainer input:focus,
+.form__inputContainer textarea:focus {
+  border-color: #38bdf8;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  box-shadow:
+    0 0 0 3px rgba(56, 189, 248, 0.15),
+    0 0 18px rgba(56, 189, 248, 0.35);
+}
+
+.form__inputContainer textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submitContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.errorContainer {
+  flex-grow: 1;
+}
+
+.error {
+  color: #fecaca;
+
+  background: rgba(239, 68, 68, 0.12);
+
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-left: 5px solid #ef4444;
+
+  padding: 12px 14px;
+
+  border-radius: 12px;
+
+  margin-bottom: 10px;
+}
+
+.button__submit button,
+.button__back {
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+
+  color: white;
+
+  border: none;
+  border-radius: 14px;
+
+  padding: 14px 24px;
+
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.button__submit button:hover,
+.button__back:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 22px rgba(56, 189, 248, 0.65);
+}
+
+.button__back {
+  margin: 20px;
+}
